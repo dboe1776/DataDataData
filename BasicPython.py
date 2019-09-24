@@ -123,7 +123,6 @@ print('The integral of y_vals is:',str(round(I,3)))
 '''or lets differentiate'''
 dy_vals4 = np.gradient(y_vals4, x_vals)
 
-
 '''lets create one more plot that shows the differentiation and integration
 Note that I used LaTex syntax in the differentiation label - just put r outside
 of the string'''
