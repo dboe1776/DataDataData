@@ -16,5 +16,5 @@ As an engineer, I recomend the following environments (both come with Anaconda):
   * Provides a unique hybrid of coding and writing all in one place.
   * Supports rich text rendering (Markdown) alongside runnable code.
   * A fantastic option for documenting your project and tracking your thought flow over time.
-  * I found Jupter very useful for taking in-class notes as it supports $\LaTeX$ equation writing.
+  * I found Jupter very useful for taking in-class notes as it supports LaTeX equation syntax.
     * Plotting interactive Root Locus diagrams right alongside notes = total win
