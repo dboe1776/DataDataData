@@ -3,7 +3,7 @@
 Data Science Demos
 
 ## How to download python
-Download the Anaconda distribution - Anaconda is a package manager that is tailored to engineers and data scientists. It makes things way easier. Download Anaconda here -> https://www.anaconda.com/distribution/
+Download the Anaconda distribution - Anaconda is a package manager that is tailored for engineers and data scientists. It makes things way easier. Download Anaconda here -> https://www.anaconda.com/distribution/
 
 ## Programming Environments
 As an engineer, I recomend the following environments (both come with Anaconda):
