@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 # Create a list (vector or array in MATLAB)
 A = [1,2,3,4,5,6]
 
-'''Python does not directly have multidimentional arrays (i.e. a matrix)
+'''Python does not natively have multidimentional arrays (i.e. a matrix)
 rather, it just uses lists of lists which is just a list contained inside a list'''
 
 # Create a list of Lists
@@ -31,8 +31,8 @@ B_np = np.array([A,A]) # Create a 2D numpy array from two lists
 
 
 '''To illustrate the benefits of using a numpy array over the list, let's say we want to
-generate a list in which each element is one half of the previous one.  That is, the n element is
-defined by 1/2^n'''
+generate a list in which each element is one half of the previous one.
+That is, the n element is defined by 1/2^n'''
 
 a=np.arange(0,11,1)
 1/2**a
@@ -41,8 +41,9 @@ a=np.arange(0,11,1)
 operating on it.  Note that the second line consists of a scaler being divided by another scaler
 that is being raised to a power where the power is an array. Numpy automatically infers that we want
 an array as the output and just performs this operation element wise.  This is one of the key
-features of the numpy module, it allows us to essentially treat an n-dimensional array as a single scaler 
-where operations are extended to each value of the array.'''
+features of the numpy module, it allows us to essentially treat an n-dimensional 
+array as a single scaler where operations are extended element-wise 
+to each value of the array.'''
 
 
 '''If we try the same thing with a list, we get a TypeError'''
@@ -50,7 +51,7 @@ where operations are extended to each value of the array.'''
 # 1/2**a
 
 
-'''Next let's take a look at some basic numerical analysis/plotting type stuff. 
+'''Next let's take a look at some basic numerical analysis/plotting stuff. 
 First, let's create an array of x values to input into a function with the end
 goal being generating a plot of f(x)'''
 
@@ -123,6 +124,7 @@ print('The integral of y_vals is:',str(round(I,3)))
 '''or lets differentiate'''
 dy_vals4 = np.gradient(y_vals4, x_vals)
 
+
 '''lets create one more plot that shows the differentiation and integration
 Note that I used LaTex syntax in the differentiation label - just put r outside
 of the string'''
@@ -143,10 +145,17 @@ plt.show()
 
 '''Next, lets' consider the case where we want to know the values of a list that 
 satisfy a certain condition. For, instance, let's say we want to know all the data points
-for which y_vals2 is greater than 0.5. This is accomplished using the np.where() function.'''
+for which y_vals4 is less than it's derivative. This is accomplished using
+the np.where() function.'''
 
-indicies = np.where(y_vals2>0.5)
+indicies = np.where(y_vals4<dy_vals4)
 
 '''The Indicies array then contains the index of each point in y_vals2 that is greater 
 than 0.5. If we want to know the functional values at these indicies, we can do that easily!'''
 vals = y_vals2[indicies]
+
+
+'''Next, let's plot this specific segment of y_vals4 overlayed upon our current 
+figure'''
+plt.plot(x_vals[indicies],y_vals4[indicies],linewidth=6,color='black')
+
