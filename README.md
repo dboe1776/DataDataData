@@ -6,7 +6,7 @@ Data Science Demos
 Download the Anaconda distribution - Anaconda is a package manager that is tailored for engineers and data scientists. It makes things way easier. Download Anaconda here -> https://www.anaconda.com/distribution/
 
 ## Programming Environments
-As an engineer, I recomend the following environments (both come with Anaconda):
+As an engineer, I recomend the following environments (first two come with Anaconda):
 
 * __Spyder__
   * Provides a _MATLAB_ like interface with an editor, console, and variable explorer windows.
@@ -18,3 +18,9 @@ As an engineer, I recomend the following environments (both come with Anaconda):
   * A fantastic option for documenting your project and tracking your thought flow over time.
   * I found Jupter very useful for taking in-class notes as it supports LaTeX equation syntax.
     * Plotting interactive Root Locus diagrams right alongside notes = total win
+
+* __Atom__
+  * A modern, clean, super flexible, open-source text editor
+  * GitHub integration is fantastic
+
+ 
