@@ -22,5 +22,6 @@ As an engineer, I recomend the following environments (first two come with Anaco
 * __Atom__
   * A modern, clean, super flexible, open-source text editor
   * GitHub integration is fantastic
+  * Download -> https://atom.io
 
  
